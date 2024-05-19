@@ -15,8 +15,27 @@ body{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
 }
 
+
+header{
+    min-height: 100px;
+    min-width: 300px;
+    background: #1a5c38;
+    background: linear-gradient(360deg, #1a5c38 0%, #34b86f 50%, #38ca79 100%);
+    padding: 2px 0px 1px 0px;
+    margin: 0%;
+    box-shadow: 3px 3px 3px#00000041; 
+}
+
+h1{
+    min-width: 300px;
+    font-family: idroid;
+    text-align: left;
+    color: #42785b;
+    text-shadow: 2px 1px 5px #0000003d;
+    padding-left: 10px;
+}
+
 h1#principal{
-    width: 800px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +50,6 @@ h1#principal{
 }
 
 p#intro{
-    width: 600px;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2em;
@@ -43,17 +61,12 @@ p#intro{
     line-height: 1.5;
 }
 
-header{
-    background: #1a5c38;
-    background: linear-gradient(360deg, #1a5c38 0%, #34b86f 50%, #38ca79 100%);
-    padding: 2px 0px 1px 0px;
-    margin: 0%;
-    box-shadow: 3px 3px 3px#00000041; 
+nav{
+    max-height: 38px;
 }
 
 nav > ul#intro-nav {
     position: relative;
-    display: flex;
     justify-content: left;
     list-style: none;
     user-select: none;
@@ -75,19 +88,12 @@ nav > ul#intro-nav {
 }
 
 main{
+    min-width: 300px;
+    max-width: 1000px;
     background-color: #ffffff;
-    width: 1000px;
     padding: 10px;   
     margin: auto;
     box-shadow: 1px 1px 5px 5px #00000041; 
-}
-
-h1{
-    font-family: idroid;
-    text-align: left;
-    color: #42785b;
-    text-shadow: 2px 1px 5px #0000003d;
-    padding-left: 10px;
 }
 
 h2{
@@ -121,16 +127,24 @@ img{
     display: block;
 }
 
-iframe{
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-}
 
-#video{
+div#video{
+    display: block;
+    min-height: 600px;
     margin: -10px;
     padding: 30px 5px;
     background-color: #1a5c38;
+    position: relative;
+}
+
+div#video > iframe{
+    min-width: 350px;
+    max-width: 1000px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 h3{
