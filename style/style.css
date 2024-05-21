@@ -3,7 +3,7 @@
 /* Custom Font */
 @font-face {
     font-family: idroid;
-    src: url(./fonts/idroid.otf) format(opentype);
+    src: url(../fonts/idroid.otf) format(opentype);
 }
 
 body{
@@ -62,7 +62,6 @@ p#intro{
 
 nav{
     max-height: 38px;
-    overflow: hidden;
 }
 
 nav > ul#intro-nav {
@@ -194,7 +193,7 @@ p.withMark {
 
 footer{
     margin-top: 20px;
-    padding: 5px;
+    padding: 10px;
     font-size: 0.9em;
     height: 20px;
     color: white;
@@ -223,4 +222,22 @@ a.links{
 a.links:hover{
     color: #000000;
     font-weight: bold;
+}
+
+@media (max-width: 460px){
+    footer{
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 570px){
+    nav{
+        padding-bottom: 10px;
+    }
+
+    nav > ul#intro-nav {
+    white-space: normal;
+    text-align: justify;
+    font-size: 0.9em;
+    }
 }
